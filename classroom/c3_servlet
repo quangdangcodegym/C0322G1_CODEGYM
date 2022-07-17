@@ -1,0 +1,35 @@
+Sau khi làm bài quản convert currency các bạn làm lại bài quản lý user
+
+Các bạn KHÁ có thể làm theo james, bạn nào còn chậm thì có thể 
+coi video anh hướng dẫn (bằng eclipse: nó có khác xíu về thêm file thư viện
+dependencies
+Bài 1: Quản lý user basic
+https://www.youtube.com/watch?v=EmpwX1-h-8k&t=171s
+dependencies {
+    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.23'
+}
+
+Bài 2 - Quản lý user có thêm bảng country
+https://www.youtube.com/watch?v=E_DZbejzzGc&t=1233s
+
+
+Bài 3: Hướng dẫn validate dữ liệu cho form tạo mới user
+Bài hướng dẫn gốc
+https://learningprogramming.net/java/jsp-servlet/form-validation-in-jsp-servlet/
+Video anh hướng dẫn
+https://www.youtube.com/watch?v=fejC1WeV7MI&t=21s
+
+Bài 4: Tự làm phân trang, kết hợp với điều kiện lọc theo country
+Hướng dẫn theo bài code bên dưới
+https://ibytecode.com/blog/pagination-in-servlet-and-jsp/
+
+
+Bài 5: Cho thêm tính năng upload file khi thực hiện thêm, sửa thông tin user
+https://stackjava.com/jsp-servlet/code-vi-du-jsp-servlet-upload-file.html
+
+
+Bài 6: Làm tính năng bảo mật phân quyền
+https://openplanning.net/11071/tao-mot-ung-dung-login-don-gian-va-bao-mat-voi-java-servlet-filter
+
