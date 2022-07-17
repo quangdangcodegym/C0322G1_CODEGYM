@@ -37,6 +37,7 @@ public class CountryServlet extends HttpServlet{
                 case "create":
                     showNewForm(request, response);
                     break;
+
                 case "edit":
                     showEditForm(request, response);
                     break;
@@ -52,9 +53,10 @@ public class CountryServlet extends HttpServlet{
         }
 	}
 
-	
 
-	private void listCountry(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
+    private void listCountry(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		List<Country> listCountry = iCountryDAO.selectAllCountry();
         request.setAttribute("listCountry", listCountry);
         
@@ -99,6 +101,7 @@ public class CountryServlet extends HttpServlet{
         dispatcher.forward(request, response);
 		
 	}
+
 
 
 
