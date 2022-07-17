@@ -5,6 +5,15 @@ public class User {
     protected String name;
     protected String email;
     protected int idcountry;
+    protected String urlImage;
+
+    public String getUrlImage() {
+        return urlImage;
+    }
+
+    public void setUrlImage(String urlImage) {
+        this.urlImage = urlImage;
+    }
 
     public User() {}
 

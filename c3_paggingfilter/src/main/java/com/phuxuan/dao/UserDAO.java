@@ -11,8 +11,8 @@ public class UserDAO implements IUserDAO {
     private String jdbcUsername = "root";
     private String jdbcPassword = "Quangdv180729!!";
 
-    private static final String INSERT_USERS_SQL = "INSERT INTO users" + "  (name, email, idcountry) VALUES " +
-            " (?, ?, ?);";
+    private static final String INSERT_USERS_SQL = "INSERT INTO users" + "  (name, email, idcountry, urlimage) VALUES " +
+            " (?, ?, ?, ?);";
 
     private static final String SELECT_USER_BY_ID = "select id,name,email,idcountry from users where id =?";
     private static final String SELECT_ALL_USERS = "select * from users";
@@ -55,6 +55,7 @@ public class UserDAO implements IUserDAO {
 			preparedStatement.setString(1, user.getName());
 			preparedStatement.setString(2, user.getEmail());
 			preparedStatement.setInt(3, user.getIdcountry());
+            preparedStatement.setString(4, user.getUrlImage());
 			System.out.println(preparedStatement);
 			preparedStatement.executeUpdate();
 			
